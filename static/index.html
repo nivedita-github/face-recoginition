@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Recognition App</title>
+</head>
+<body>
+    <h2>Upload an Image for Face Recognition</h2>
+    <form action="/detect_faces/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Upload</button>
+    </form>
+    <h2>Add a New Face</h2>
+    <form action="/add_face/" method="post" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Enter Name">
+        <input type="file" name="file">
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
